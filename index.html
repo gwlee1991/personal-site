@@ -12,6 +12,15 @@
 		<meta name="keywords" content="HTML, CSS, Javascript, HTML5, CSS3, React, Redux, Resume, Developer, Software Engineer, Frontend developer, Ruby on Rails, Geewon Lee"/>
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -52,24 +61,25 @@
 			<section id="two" class="main style2">
 				<div class="container">
 					<div class="row 150%">
-						<div class="6u 12u$(medium)">
-							<ul class="major-icons">
-								<li><span class="icon style1 major fa-code"></span></li>
-								<li><span class="icon style2 major fa-bolt"></span></li>
-								<li><span class="icon style3 major fa-camera-retro"></span></li>
-								<li><span class="icon style4 major fa-cog"></span></li>
-								<li><span class="icon style5 major fa-desktop"></span></li>
-								<li><span class="icon style6 major fa-calendar"></span></li>
-							</ul>
-						</div>
 						<div class="6u$ 12u$(medium)">
 							<header class="major">
-								<h2>Lorem ipsum dolor adipiscing<br />
-								amet dolor consequat</h2>
+								<h2>Skills</h2>
 							</header>
-							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
-							<p>Blandit faucibus proin. Ac aliquam integer adipiscing enim non praesent vis commodo nunc phasellus cubilia ac risus accumsan. Accumsan blandit. Lobortis phasellus non lobortis dit varius mi varius accumsan lobortis. Blandit ante aliquam lacinia lorem lobortis semper morbi col faucibus vitae integer placerat accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing curae consequat feugiat etiam dolore.</p>
-							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
+						</div>
+						<div class="6u 12u$(medium)">
+							<ul class="major-icons">
+								<li><span class="icon center"><div class="rotate center"><i class="devicon-javascript-plain colored"></i></div></span></li>
+								<li><span class="icon center"><div class="rotate center"><i class="devicon-react-original-wordmark colored"></i></div></span></li>
+								<li><span class="icon center"><div class="rotate center"><i class="devicon-ruby-plain-wordmark colored"></i></div></span></li>
+								<li><span class="icon center"><div class="rotate center"><i class="devicon-rails-plain-wordmark colored"></i></div></span></li>
+								<li><span class="icon center"><div class="rotate center"><i class="devicon-html5-plain-wordmark colored"></i></div></span></li>
+								<li><span class="icon center"><div class="rotate center"><i class="devicon-css3-plain-wordmark colored"></i></div></span></li>
+								<li><span class="icon center"><div class="rotate center"><i class="devicon-nodejs-plain-wordmark colored"></i></div></span></li>
+								<li><span class="icon center"><div class="rotate center"><i class="devicon-postgresql-plain-wordmark colored"></i></div></span></li>
+								<li><span class="icon center"><div class="rotate center"><i class="devicon-mongodb-plain-wordmark"></i></div></span></li>
+							</ul>
+
+
 						</div>
 					</div>
 				</div>
@@ -467,5 +477,32 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+	<script>
+		function resize(){
+			let icons = document.querySelectorAll("i");
+			if (window.innerWidth < 750) {
+				icons.forEach(icon => {
+					icon.style.fontSize = "50px";
+				})
+			} else {
+				icons.forEach(icon => {
+					icon.style.fontSize = "80px";
+				})
+			}
+		}
+
+		function changeDisplay(){
+			
+		}
+		
+		window.onload(resize());
+
+		window.addEventListener("resize", e => {
+			e.preventDefault();
+			resize();
+		});
+
+
+	</script>
 	</body>
 </html>

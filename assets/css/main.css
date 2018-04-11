@@ -1989,8 +1989,7 @@
 			content: '';
 			display: inline-block;
 			height: 1px;
-			margin-top: 1.5em;
-			width: 6em;
+			/* margin-top: 1.5em; width: 6em; */
 		}
 
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
@@ -2495,6 +2494,10 @@
 
 	dl {
 		margin: 0 0 2em 0;
+	}
+
+	.rotate {
+		transform: rotate(-45deg);
 	}
 
 /* Table */
@@ -3267,6 +3270,10 @@
 
 			.icon.major {
 				margin: 0 0 1em 0;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-content: center;
 			}
 
 		/* Button */
@@ -3418,4 +3425,10 @@
 				padding: 2em 1em 2em 1em ;
 			}
 
+	}
+
+	.center {
+		display: flex !important;
+		justify-content: center;
+		align-items: center;
 	}
