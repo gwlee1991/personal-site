@@ -34,6 +34,10 @@
 		quotes: none;
 	}
 
+	.project-image {
+		height: 200px;
+	}
+
 	blockquote:before, blockquote:after, q:before, q:after {
 		content: '';
 		content: none;
